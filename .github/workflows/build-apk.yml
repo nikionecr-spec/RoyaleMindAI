@@ -23,6 +23,16 @@ jobs:
         with:
           gradle-version: '8.7'
 
+      - name: Copy detector model into app assets (if present)
+        run: |
+          mkdir -p android/app/src/main/assets/model
+          if [ -f models/detection/detector_int8.onnx ]; then
+            cp models/detection/detector_int8.onnx android/app/src/main/assets/model/detector_int8.onnx
+            echo "model bundled into APK"
+          else
+            echo "no model file - APK builds with honest 'model not loaded' status"
+          fi
+
       - name: Build debug APK (installable, debug-signed)
         working-directory: android
         run: gradle -p . :app:assembleDebug --no-daemon

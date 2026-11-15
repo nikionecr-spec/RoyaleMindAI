@@ -66,7 +66,7 @@ object ArenaGeometry {
         val inBand = abs(p.y - RIVER_Y) * TILES_Y < RIVER_HALF_TILES
         val onBridge = minOf(abs(p.x - TOWER_X_LEFT), abs(p.x - TOWER_X_RIGHT)) * TILES_X < 1.2
         if (!flying && inBand && !onBridge) return false
-        val ownBoundary = RIVER_Y - (RIVER_HALF_TILES / TILES_Y).takeIf { flying } ?: 0.0
+        val ownBoundary = RIVER_Y - (if (flying) RIVER_HALF_TILES / TILES_Y else 0.0)
         if (p.y >= ownBoundary) return true
         return if (p.x < 0.5) (!cfg.enemyLeftAlive && p.y >= TOWER_Y_ENEMY - 0.02)
         else (!cfg.enemyRightAlive && p.y >= TOWER_Y_ENEMY - 0.02)

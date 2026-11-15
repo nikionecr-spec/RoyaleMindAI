@@ -19,11 +19,7 @@ class MainActivity : ComponentActivity() {
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             val data = result.data
             if (result.resultCode == RESULT_OK && data != null) {
-                val svc = Intent(this, com.royalemind.ai.capture.ScreenCaptureService::class.java)
-                    .putExtra(com.royalemind.ai.capture.ScreenCaptureService.EXTRA_RESULT_CODE,
-                        result.resultCode)
-                    .putExtra(com.royalemind.ai.capture.ScreenCaptureService.EXTRA_DATA, data)
-                ContextCompat.startForegroundService(this, svc)
+                startAssistant(result.resultCode, data)
             }
         }
 
@@ -48,6 +44,15 @@ class MainActivity : ComponentActivity() {
         if (!Settings.canDrawOverlays(this)) { requestOverlay(); return }
         val mpm = getSystemService(MediaProjectionManager::class.java)
         projectionLauncher.launch(mpm.createScreenCaptureIntent())
+    }
+
+    /** Starts the capture pipeline AND the floating HUD together. */
+    private fun startAssistant(resultCode: Int, data: Intent) {
+        val svc = Intent(this, com.royalemind.ai.capture.ScreenCaptureService::class.java)
+            .putExtra(com.royalemind.ai.capture.ScreenCaptureService.EXTRA_RESULT_CODE, resultCode)
+            .putExtra(com.royalemind.ai.capture.ScreenCaptureService.EXTRA_DATA, data)
+        ContextCompat.startForegroundService(this, svc)
+        startService(Intent(this, com.royalemind.ai.overlay.OverlayService::class.java))
     }
 
     private fun requestOverlay() {
