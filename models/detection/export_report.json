@@ -11,7 +11,7 @@
       213,
       2100
     ],
-    "output_mean": 2.28779,
+    "output_mean": 1.9754,
     "size_mb": 10.74
   },
   "int8": {
@@ -26,7 +26,7 @@
       213,
       2100
     ],
-    "output_mean": 2.31484,
+    "output_mean": 2.01556,
     "size_mb": 2.96
   },
   "imgsz": 320

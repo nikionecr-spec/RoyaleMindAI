@@ -43,18 +43,21 @@ def main() -> int:
         exist_ok=True,
         verbose=True,
     )
-    # persist the real, measured final metrics
+    import json
     metrics = {}
     try:
         m = results.results_dict
         metrics = {k: round(float(v), 4) for k, v in m.items() if isinstance(v, (int, float))}
     except Exception:
         pass
-    with open(f"runs/{args.name}/train_metrics.json", "w") as f:
-        import json
+    out_dir = getattr(results, "save_dir", None) or f"runs/{args.name}"
+    import os
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, "train_metrics.json"), "w") as f:
         json.dump({"model": args.model, "epochs": args.epochs, "imgsz": args.imgsz,
-                   "batch": args.batch, "device": args.device, "metrics": metrics}, f, indent=2)
-    print("saved ->", f"runs/{args.name}/train_metrics.json")
+                   "batch": args.batch, "fraction": args.fraction, "device": args.device,
+                   "metrics": metrics}, f, indent=2)
+    print("saved ->", os.path.join(out_dir, "train_metrics.json"))
     return 0
 
 
