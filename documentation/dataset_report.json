@@ -1,0 +1,134 @@
+{
+  "classes": 187,
+  "shards": [
+    {
+      "file": "train-00000-of-00001.parquet",
+      "rows": 27500,
+      "columns": [
+        "image",
+        "label",
+        "source",
+        "video_id",
+        "track_id",
+        "frame"
+      ],
+      "sampled": 3928,
+      "decode_failures": 0,
+      "duplicate_images_in_sample": 0,
+      "bad_bboxes": 0,
+      "total_bboxes": 0,
+      "unknown_labels": 5228,
+      "label_top10": {
+        "?208": 2159,
+        "goblin": 1717,
+        "spear-goblin": 998,
+        "barbarian": 990,
+        "?191": 639,
+        "skeleton-evolution": 537,
+        "baby-dragon": 534,
+        "zappy": 519,
+        "royal-recruit": 516,
+        "knight": 407
+      },
+      "label_bottom10": {
+        "bomber-evolution": 6,
+        "bat-evolution": 6,
+        "freeze": 5,
+        "barbarian-evolution": 4,
+        "goblin-drill-evolution": 4,
+        "hunter": 4,
+        "axe": 3,
+        "ice-spirit-evolution": 3,
+        "skeleton-army-evolution": 1,
+        "tornado": 1
+      },
+      "distinct_labels": 174
+    },
+    {
+      "file": "train-00000-of-00001.parquet",
+      "rows": 42778,
+      "columns": [
+        "image",
+        "video_id",
+        "track_id",
+        "pred",
+        "conf",
+        "top3",
+        "trusted",
+        "graded"
+      ],
+      "sampled": 6111,
+      "decode_failures": 0,
+      "duplicate_images_in_sample": 3,
+      "bad_bboxes": 0,
+      "total_bboxes": 0,
+      "unknown_labels": 3163,
+      "label_top10": {
+        "drop": 4119,
+        "goblin": 4105,
+        "skeleton": 2212,
+        "spear-goblin": 1622,
+        "barbarian": 1417,
+        "the-log": 934,
+        "skeleton-evolution": 784,
+        "royal-recruit": 767,
+        "baby-dragon": 754,
+        "zappy": 719
+      },
+      "label_bottom10": {
+        "bat-evolution": 4,
+        "goblin-drill-evolution": 4,
+        "goblin-machine": 4,
+        "barbarian-evolution": 3,
+        "hunter": 3,
+        "ice-spirit-evolution": 2,
+        "axe": 2,
+        "skeleton-army-evolution": 1,
+        "lumberjack": 1,
+        "tornado": 1
+      },
+      "distinct_labels": 174
+    },
+    {
+      "file": "train-b2-00002-of-00003.parquet",
+      "rows": 1000,
+      "columns": [
+        "image",
+        "image_id",
+        "backdrop_video",
+        "n_boxes",
+        "objects"
+      ],
+      "sampled": 142,
+      "decode_failures": 0,
+      "duplicate_images_in_sample": 0,
+      "bad_bboxes": 0,
+      "total_bboxes": 9840,
+      "unknown_labels": 0,
+      "label_top10": {},
+      "label_bottom10": {},
+      "distinct_labels": 0
+    },
+    {
+      "file": "train-b3-00001-of-00002.parquet",
+      "rows": 1500,
+      "columns": [
+        "image",
+        "image_id",
+        "backdrop_video",
+        "n_boxes",
+        "objects"
+      ],
+      "sampled": 214,
+      "decode_failures": 0,
+      "duplicate_images_in_sample": 0,
+      "bad_bboxes": 0,
+      "total_bboxes": 16044,
+      "unknown_labels": 0,
+      "label_top10": {},
+      "label_bottom10": {},
+      "distinct_labels": 0
+    }
+  ],
+  "total_rows": 72778
+}

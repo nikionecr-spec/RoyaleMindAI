@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">RoyaleMind AI</string>
+    <string name="notif_channel">Analysis assistant</string>
+    <string name="notif_capture_title">RoyaleMind assistant is running</string>
+    <string name="notif_capture_text">Live match analysis overlay (display only, never touches the game)</string>
+
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_live">Live Assistant</string>
+    <string name="tab_cards">Card Database</string>
+    <string name="tab_history">Match History</string>
+    <string name="tab_tactics">Tactical Analysis</string>
+    <string name="tab_model">Model Status</string>
+    <string name="tab_perf">Performance</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_hint">Start the Live Assistant, switch to Clash Royale, and the floating HUD will show suggestions. Analysis only - the app never plays for you.</string>
+    <string name="assistant">Assistant</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="model">Model</string>
+    <string name="loaded">loaded</string>
+    <string name="not_loaded">not loaded</string>
+    <string name="inference">Inference latency</string>
+
+    <string name="start_assistant">Start assistant</string>
+    <string name="stop_assistant">Stop</string>
+    <string name="overlay_permission">Floating window permission</string>
+    <string name="manual_hand">Your hand (type class names, e.g. hog-rider)</string>
+    <string name="current_suggestion">Current suggestion</string>
+    <string name="none">—</string>
+    <string name="elixir_player">Elixir (you)</string>
+    <string name="elixir_opponent">Elixir (opponent estimate)</string>
+
+    <string name="cards_count">Card stats: %1$d entries</string>
+    <string name="history_title">Match History</string>
+    <string name="save_now">Save current state</string>
+    <string name="history_empty">No saved snapshots yet.</string>
+    <string name="tactics_title">Tactical Analysis</string>
+    <string name="reasons">Reasons</string>
+    <string name="opponent_coverage">Opponent deck coverage: %1$.0f%%</string>
+    <string name="classes_count">Detector classes: %1$d</string>
+    <string name="model_source_note">Model trained on the fan-made research dataset SudhishNeel/clash-royale-detection (no Supercell affiliation). Values are approximate; audit before competitive use.</string>
+    <string name="frames">Frames processed</string>
+    <string name="perf_target">Target on Poco X4 Pro: 15–20 processing FPS with no visible game lag.</string>
+    <string name="language">Language</string>
+    <string name="system_language">System default</string>
+    <string name="policy_title">Analysis-only policy</string>
+    <string name="policy_text">RoyaleMind AI never injects input, never touches the game client, and never auto-plays. It only displays tactical information.</string>
+</resources>

@@ -1,0 +1,105 @@
+{
+  "action": "DEFEND",
+  "recommended_card": "knight",
+  "placement": {
+    "x": 0.204,
+    "y": 0.5361
+  },
+  "reason": "Defensive answer to hog-rider",
+  "confidence": 0.6435000000000001,
+  "risk": "low",
+  "reasons": [
+    "pulls/building defense vs win condition",
+    "intercept hog-rider",
+    "arrives 7.2s before threat 7.3s",
+    "distance 7.2 tiles (ideal ~2.5)",
+    "covered by own tower"
+  ],
+  "alternatives": [
+    {
+      "action": "DEFEND",
+      "recommended_card": "musketeer",
+      "placement": null,
+      "reason": "Alternative defense with musketeer",
+      "confidence": 0.315,
+      "risk": "medium",
+      "reasons": [
+        "generic solid defender"
+      ]
+    },
+    {
+      "action": "DEFEND",
+      "recommended_card": "mini-pekka",
+      "placement": null,
+      "reason": "Alternative defense with mini-pekka",
+      "confidence": 0.27,
+      "risk": "medium",
+      "reasons": [
+        "hard hitter vs win condition"
+      ]
+    }
+  ],
+  "elixir": {
+    "player": 10.0,
+    "opponent_estimate": 5.2,
+    "opponent_confidence": 0.98,
+    "phase": "single",
+    "rate_per_second": 0.357,
+    "elapsed_s": 65.0
+  },
+  "opponent": {
+    "hand": [
+      "giant",
+      "musketeer",
+      null,
+      null
+    ],
+    "queue": [
+      "archers",
+      "fireball",
+      "knight",
+      "hog-rider"
+    ],
+    "known": [
+      "archers",
+      "fireball",
+      "giant",
+      "hog-rider",
+      "knight",
+      "musketeer"
+    ],
+    "coverage": 0.75,
+    "next": [
+      {
+        "card": "archers",
+        "probability": 0.55,
+        "evolution": false
+      },
+      {
+        "card": "fireball",
+        "probability": 0.25,
+        "evolution": false
+      },
+      {
+        "card": "knight",
+        "probability": 0.13,
+        "evolution": false
+      },
+      {
+        "card": "hog-rider",
+        "probability": 0.07,
+        "evolution": false
+      }
+    ],
+    "champions_on_cooldown": [],
+    "evolutions_seen": []
+  },
+  "threats": [
+    {
+      "card": "hog-rider",
+      "lane": "left",
+      "eta_to_tower_s": 7.3,
+      "threat": 78.81
+    }
+  ]
+}

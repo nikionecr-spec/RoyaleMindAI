@@ -1,0 +1,1420 @@
+{
+ "_provenance": {
+  "note": "Approximate tournament-standard (level 11) values compiled from public community wikis; drive RELATIVE scoring only. Re-audit against the official API (developer.clashroyale.com /v1/cards) before competitive use.",
+  "official_api": "https://developer.clashroyale.com/",
+  "dataset_class_names": "SudhishNeel/clash-royale-detection (208 classes)"
+ },
+ "cards": [
+  {
+   "name": "knight",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1766,
+   "dps": 160,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "archers",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 504,
+   "dps": 118,
+   "range_t": 5.0,
+   "count": 2,
+   "roles": [
+    "air_defense",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "musketeer",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 720,
+   "dps": 218,
+   "range_t": 6.0,
+   "count": 1,
+   "roles": [
+    "air_defense",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "mini-pekka",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1361,
+   "dps": 400,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "valkyrie",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1908,
+   "dps": 162,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "splash"
+   ],
+   "flying": false
+  },
+  {
+   "name": "hog-rider",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "very_fast",
+   "hp": 1696,
+   "dps": 300,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "win_condition",
+    "building_targeting",
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "giant",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "slow",
+   "hp": 3275,
+   "dps": 132,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "tank",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "golem",
+   "elixir": 8,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "slow",
+   "hp": 4625,
+   "dps": 133,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "tank",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "pekka",
+   "elixir": 7,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "slow",
+   "hp": 4400,
+   "dps": 650,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "tank"
+   ],
+   "flying": false
+  },
+  {
+   "name": "mega-knight",
+   "elixir": 7,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 4200,
+   "dps": 230,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "tank",
+    "splash",
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "prince",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1920,
+   "dps": 380,
+   "range_t": 1.6,
+   "count": 1,
+   "roles": [
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "dark-prince",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1700,
+   "dps": 250,
+   "range_t": 1.4,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "splash",
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "baby-dragon",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 1152,
+   "dps": 133,
+   "range_t": 3.5,
+   "count": 1,
+   "roles": [
+    "splash",
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "balloon",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "fast",
+   "hp": 1780,
+   "dps": 550,
+   "range_t": 1.0,
+   "count": 1,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": true
+  },
+  {
+   "name": "lava-hound",
+   "elixir": 7,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "slow",
+   "hp": 4700,
+   "dps": 100,
+   "range_t": 2.0,
+   "count": 1,
+   "roles": [
+    "tank",
+    "air_defense",
+    "building_targeting"
+   ],
+   "flying": true
+  },
+  {
+   "name": "minions",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 190,
+   "dps": 107,
+   "range_t": 2.0,
+   "count": 3,
+   "roles": [
+    "swarm",
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "minion",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 190,
+   "dps": 107,
+   "range_t": 2.0,
+   "count": 3,
+   "roles": [
+    "swarm",
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "skeleton",
+   "elixir": 1,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 81,
+   "dps": 81,
+   "range_t": 0.8,
+   "count": 4,
+   "roles": [
+    "swarm",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "skeleton-army",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 81,
+   "dps": 81,
+   "range_t": 0.8,
+   "count": 15,
+   "roles": [
+    "swarm"
+   ],
+   "flying": false
+  },
+  {
+   "name": "bats",
+   "elixir": 2,
+   "kind": "troop",
+   "target": "both",
+   "speed": "very_fast",
+   "hp": 67,
+   "dps": 83,
+   "range_t": 1.6,
+   "count": 5,
+   "roles": [
+    "swarm",
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "goblin",
+   "elixir": 2,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "very_fast",
+   "hp": 202,
+   "dps": 160,
+   "range_t": 0.8,
+   "count": 3,
+   "roles": [
+    "swarm",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "spear-goblin",
+   "elixir": 2,
+   "kind": "troop",
+   "target": "both",
+   "speed": "very_fast",
+   "hp": 133,
+   "dps": 83,
+   "range_t": 5.0,
+   "count": 3,
+   "roles": [
+    "swarm",
+    "air_defense",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "barbarian",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 636,
+   "dps": 159,
+   "range_t": 1.2,
+   "count": 4,
+   "roles": [
+    "swarm",
+    "mini_tank"
+   ],
+   "flying": false
+  },
+  {
+   "name": "elite-barbarian",
+   "elixir": 6,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1332,
+   "dps": 254,
+   "range_t": 1.2,
+   "count": 2,
+   "roles": [
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "royal-recruit",
+   "elixir": 7,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1442,
+   "dps": 133,
+   "range_t": 1.2,
+   "count": 6,
+   "roles": [
+    "mini_tank"
+   ],
+   "flying": false
+  },
+  {
+   "name": "royal-giant",
+   "elixir": 6,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "slow",
+   "hp": 4320,
+   "dps": 226,
+   "range_t": 7.0,
+   "count": 1,
+   "roles": [
+    "tank",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "royal-hog",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "fast",
+   "hp": 500,
+   "dps": 142,
+   "range_t": 1.0,
+   "count": 3,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "bomber",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 267,
+   "dps": 137,
+   "range_t": 4.5,
+   "count": 1,
+   "roles": [
+    "splash",
+    "support",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "wizard",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 720,
+   "dps": 226,
+   "range_t": 5.5,
+   "count": 1,
+   "roles": [
+    "splash",
+    "air_defense",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "witch",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 830,
+   "dps": 116,
+   "range_t": 5.0,
+   "count": 1,
+   "roles": [
+    "splash",
+    "swarm",
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "executioner",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 1100,
+   "dps": 200,
+   "range_t": 4.6,
+   "count": 1,
+   "roles": [
+    "splash",
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "bowler",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1440,
+   "dps": 140,
+   "range_t": 4.5,
+   "count": 1,
+   "roles": [
+    "splash",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "hunter",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 800,
+   "dps": 560,
+   "range_t": 3.5,
+   "count": 1,
+   "roles": [
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "magic-archer",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 530,
+   "dps": 163,
+   "range_t": 7.0,
+   "count": 1,
+   "roles": [
+    "support",
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "dart-goblin",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "both",
+   "speed": "very_fast",
+   "hp": 350,
+   "dps": 240,
+   "range_t": 6.5,
+   "count": 1,
+   "roles": [
+    "support",
+    "air_defense",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "electro-wizard",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 670,
+   "dps": 168,
+   "range_t": 5.0,
+   "count": 1,
+   "roles": [
+    "reset",
+    "air_defense",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "ice-wizard",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 565,
+   "dps": 65,
+   "range_t": 5.5,
+   "count": 1,
+   "roles": [
+    "support",
+    "splash",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "electro-dragon",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "slow",
+   "hp": 1250,
+   "dps": 180,
+   "range_t": 3.5,
+   "count": 1,
+   "roles": [
+    "reset",
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "inferno-dragon",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 1150,
+   "dps": 60,
+   "range_t": 3.5,
+   "count": 1,
+   "roles": [
+    "air_defense"
+   ],
+   "flying": true
+  },
+  {
+   "name": "inferno-tower",
+   "elixir": 5,
+   "kind": "building",
+   "target": "both",
+   "speed": "none",
+   "hp": 1571,
+   "dps": 60,
+   "range_t": 6.0,
+   "count": 1,
+   "roles": [
+    "building",
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "cannon",
+   "elixir": 3,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 824,
+   "dps": 212,
+   "range_t": 5.5,
+   "count": 1,
+   "roles": [
+    "building"
+   ],
+   "flying": false
+  },
+  {
+   "name": "tesla",
+   "elixir": 4,
+   "kind": "building",
+   "target": "both",
+   "speed": "none",
+   "hp": 900,
+   "dps": 192,
+   "range_t": 5.5,
+   "count": 1,
+   "roles": [
+    "building",
+    "air_defense"
+   ],
+   "flying": false
+  },
+  {
+   "name": "bomb-tower",
+   "elixir": 4,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 1600,
+   "dps": 130,
+   "range_t": 5.0,
+   "count": 1,
+   "roles": [
+    "building",
+    "splash"
+   ],
+   "flying": false
+  },
+  {
+   "name": "tombstone",
+   "elixir": 3,
+   "kind": "building",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 400,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "building",
+    "swarm"
+   ],
+   "flying": false
+  },
+  {
+   "name": "goblin-cage",
+   "elixir": 4,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 1000,
+   "dps": 130,
+   "range_t": 4.0,
+   "count": 1,
+   "roles": [
+    "building"
+   ],
+   "flying": false
+  },
+  {
+   "name": "furnace",
+   "elixir": 4,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 800,
+   "dps": 80,
+   "range_t": 6.0,
+   "count": 1,
+   "roles": [
+    "building",
+    "swarm"
+   ],
+   "flying": false
+  },
+  {
+   "name": "goblin-drill",
+   "elixir": 4,
+   "kind": "building",
+   "target": "buildings_only",
+   "speed": "none",
+   "hp": 1000,
+   "dps": 150,
+   "range_t": 1.0,
+   "count": 1,
+   "roles": [
+    "building",
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "mortar",
+   "elixir": 4,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 800,
+   "dps": 130,
+   "range_t": 11.5,
+   "count": 1,
+   "roles": [
+    "building"
+   ],
+   "flying": false
+  },
+  {
+   "name": "x-bow",
+   "elixir": 6,
+   "kind": "building",
+   "target": "ground",
+   "speed": "none",
+   "hp": 1900,
+   "dps": 160,
+   "range_t": 11.5,
+   "count": 1,
+   "roles": [
+    "building"
+   ],
+   "flying": false
+  },
+  {
+   "name": "royal-hogs",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "fast",
+   "hp": 500,
+   "dps": 142,
+   "range_t": 1.0,
+   "count": 3,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "battle-ram",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "fast",
+   "hp": 1200,
+   "dps": 250,
+   "range_t": 1.0,
+   "count": 1,
+   "roles": [
+    "win_condition",
+    "building_targeting",
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "bandit",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1000,
+   "dps": 240,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mobility"
+   ],
+   "flying": false
+  },
+  {
+   "name": "royal-ghost",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 900,
+   "dps": 200,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mobility",
+    "mini_tank"
+   ],
+   "flying": false
+  },
+  {
+   "name": "lumberjack",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 1300,
+   "dps": 300,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mobility",
+    "support"
+   ],
+   "flying": false
+  },
+  {
+   "name": "ice-golem",
+   "elixir": 2,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "slow",
+   "hp": 1100,
+   "dps": 50,
+   "range_t": 1.0,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "cycle_card",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "ice-spirit",
+   "elixir": 1,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 200,
+   "dps": 60,
+   "range_t": 1.6,
+   "count": 1,
+   "roles": [
+    "reset",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "electro-spirit",
+   "elixir": 1,
+   "kind": "troop",
+   "target": "both",
+   "speed": "very_fast",
+   "hp": 200,
+   "dps": 60,
+   "range_t": 2.5,
+   "count": 1,
+   "roles": [
+    "reset",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "fire-spirit",
+   "elixir": 1,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 200,
+   "dps": 100,
+   "range_t": 2.0,
+   "count": 1,
+   "roles": [
+    "splash",
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "heal-spirit",
+   "elixir": 1,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 200,
+   "dps": 50,
+   "range_t": 2.0,
+   "count": 1,
+   "roles": [
+    "cycle_card"
+   ],
+   "flying": false
+  },
+  {
+   "name": "wall-breaker",
+   "elixir": 2,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "very_fast",
+   "hp": 240,
+   "dps": 350,
+   "range_t": 1.0,
+   "count": 2,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": false
+  },
+  {
+   "name": "skeleton-barrel",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "buildings_only",
+   "speed": "fast",
+   "hp": 600,
+   "dps": 90,
+   "range_t": 1.0,
+   "count": 1,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "flying": true
+  },
+  {
+   "name": "golden-knight",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1800,
+   "dps": 260,
+   "range_t": 1.4,
+   "count": 1,
+   "roles": [
+    "mobility",
+    "mini_tank"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "skeleton-king",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1800,
+   "dps": 220,
+   "range_t": 1.4,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "swarm"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "archer-queen",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "fast",
+   "hp": 1200,
+   "dps": 300,
+   "range_t": 5.0,
+   "count": 1,
+   "roles": [
+    "air_defense",
+    "support"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "mighty-miner",
+   "elixir": 4,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1600,
+   "dps": 280,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mini_tank"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "monk",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "both",
+   "speed": "medium",
+   "hp": 2000,
+   "dps": 200,
+   "range_t": 1.6,
+   "count": 1,
+   "roles": [
+    "reset",
+    "mini_tank"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "little-prince",
+   "elixir": 3,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 700,
+   "dps": 230,
+   "range_t": 1.6,
+   "count": 1,
+   "roles": [
+    "mobility"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "goblinstein",
+   "elixir": 5,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "medium",
+   "hp": 1800,
+   "dps": 240,
+   "range_t": 1.2,
+   "count": 1,
+   "roles": [
+    "mini_tank",
+    "reset"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "boss-bandit",
+   "elixir": 6,
+   "kind": "troop",
+   "target": "ground",
+   "speed": "fast",
+   "hp": 2400,
+   "dps": 300,
+   "range_t": 1.4,
+   "count": 1,
+   "roles": [
+    "tank",
+    "mobility"
+   ],
+   "champion": true,
+   "flying": false
+  },
+  {
+   "name": "fireball",
+   "elixir": 4,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 689,
+   "spell_radius_t": 2.5,
+   "flying": false
+  },
+  {
+   "name": "zap",
+   "elixir": 2,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage",
+    "reset"
+   ],
+   "spell_damage": 192,
+   "spell_radius_t": 2.5,
+   "flying": false
+  },
+  {
+   "name": "the-log",
+   "elixir": 2,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 350,
+   "spell_radius_t": 2.4,
+   "flying": false
+  },
+  {
+   "name": "arrows",
+   "elixir": 3,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 293,
+   "spell_radius_t": 4.0,
+   "flying": false
+  },
+  {
+   "name": "poison",
+   "elixir": 4,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 480,
+   "spell_radius_t": 3.5,
+   "flying": false
+  },
+  {
+   "name": "rocket",
+   "elixir": 6,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 1300,
+   "spell_radius_t": 2.0,
+   "flying": false
+  },
+  {
+   "name": "lightning",
+   "elixir": 6,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage",
+    "reset"
+   ],
+   "spell_damage": 879,
+   "spell_radius_t": 3.5,
+   "flying": false
+  },
+  {
+   "name": "tornado",
+   "elixir": 3,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 213,
+   "spell_radius_t": 5.5,
+   "flying": false
+  },
+  {
+   "name": "freeze",
+   "elixir": 4,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "reset"
+   ],
+   "spell_damage": 120,
+   "spell_radius_t": 3.0,
+   "flying": false
+  },
+  {
+   "name": "barbarian-barrel",
+   "elixir": 2,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 240,
+   "spell_radius_t": 1.9,
+   "flying": false
+  },
+  {
+   "name": "giant-snowball",
+   "elixir": 2,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 191,
+   "spell_radius_t": 2.5,
+   "flying": false
+  },
+  {
+   "name": "earthquake",
+   "elixir": 3,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 315,
+   "spell_radius_t": 3.5,
+   "flying": false
+  },
+  {
+   "name": "graveyard",
+   "elixir": 5,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "spell_damage"
+   ],
+   "spell_damage": 0,
+   "spell_radius_t": 4.0,
+   "flying": false
+  },
+  {
+   "name": "rage",
+   "elixir": 2,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [],
+   "spell_damage": 0,
+   "spell_radius_t": 5.0,
+   "flying": false
+  },
+  {
+   "name": "clone",
+   "elixir": 3,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [],
+   "spell_damage": 0,
+   "spell_radius_t": 3.0,
+   "flying": false
+  },
+  {
+   "name": "mirror",
+   "elixir": 1,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [],
+   "spell_damage": 0,
+   "spell_radius_t": 0.0,
+   "flying": false
+  },
+  {
+   "name": "elixir-collector",
+   "elixir": 6,
+   "kind": "building",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 800,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "building"
+   ],
+   "flying": false
+  },
+  {
+   "name": "goblin-barrel",
+   "elixir": 3,
+   "kind": "spell",
+   "target": "no_target",
+   "speed": "none",
+   "hp": 0,
+   "dps": 0,
+   "range_t": 0.0,
+   "count": 1,
+   "roles": [
+    "win_condition",
+    "building_targeting"
+   ],
+   "spell_damage": 0,
+   "spell_radius_t": 0.0,
+   "flying": false
+  }
+ ]
+}

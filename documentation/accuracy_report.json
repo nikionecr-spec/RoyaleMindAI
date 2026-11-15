@@ -1,0 +1,14 @@
+{
+  "generated_by": "training/evaluate.py",
+  "detection_test": {
+    "precision": 0.4427,
+    "recall": 0.032,
+    "map50": 0.0227,
+    "map5095": 0.0175
+  },
+  "onnx_cpu_benchmark": {
+    "input": "1x3x320x320",
+    "avg_latency_ms": 17.67,
+    "fps_theoretical": 56.6
+  }
+}

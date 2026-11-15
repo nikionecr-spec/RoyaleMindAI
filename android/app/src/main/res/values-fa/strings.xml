@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">رویال‌مایند AI</string>
+    <string name="notif_channel">دستیار تحلیل</string>
+    <string name="notif_capture_title">دستیار رویال‌مایند فعال است</string>
+    <string name="notif_capture_text">پنجره شناور تحلیل زنده (فقط نمایش — هرگز با بازی کاری ندارد)</string>
+
+    <string name="tab_dashboard">داشبورد</string>
+    <string name="tab_live">دستیار زنده</string>
+    <string name="tab_cards">کارت‌ها</string>
+    <string name="tab_history">تاریخچه</string>
+    <string name="tab_tactics">تحلیل تاکتیکی</string>
+    <string name="tab_model">وضعیت مدل</string>
+    <string name="tab_perf">کارایی</string>
+    <string name="tab_settings">تنظیمات</string>
+
+    <string name="dashboard_title">داشبورد</string>
+    <string name="dashboard_hint">دستیار زنده را روشن کنید و به Clash Royale بروید؛ پنجره شناور، پیشنهادها را نشان می‌دهد. فقط تحلیل — برنامه هرگز جای شما بازی نمی‌کند.</string>
+    <string name="assistant">دستیار</string>
+    <string name="on">روشن</string>
+    <string name="off">خاموش</string>
+    <string name="model">مدل</string>
+    <string name="loaded">بارگذاری شده</string>
+    <string name="not_loaded">بارگذاری نشده</string>
+    <string name="inference">تأخیر استنتاج</string>
+
+    <string name="start_assistant">شروع دستیار</string>
+    <string name="stop_assistant">توقف</string>
+    <string name="overlay_permission">مجوز پنجره شناور</string>
+    <string name="manual_hand">دست شما (نام کلاس‌ها، مثل hog-rider)</string>
+    <string name="current_suggestion">پیشنهاد فعلی</string>
+    <string name="none">—</string>
+    <string name="elixir_player">اکسیر (شما)</string>
+    <string name="elixir_opponent">اکسیر حریف (تخمین)</string>
+
+    <string name="cards_count">آمار کارت‌ها: %1$d مورد</string>
+    <string name="history_title">تاریخچه مسابقات</string>
+    <string name="save_now">ذخیره وضعیت فعلی</string>
+    <string name="history_empty">هنوز لحظه‌ای ذخیره نشده است.</string>
+    <string name="tactics_title">تحلیل تاکتیکی</string>
+    <string name="reasons">دلایل</string>
+    <string name="opponent_coverage">پوشش دست حریف: %1$.0f٪</string>
+    <string name="classes_count">کلاس‌های تشخیص: %1$d</string>
+    <string name="model_source_note">مدل روی دیتاست پژوهشی SudhishNeel/clash-royale-detection آموزش دیده (وابسته به Supercell نیست). مقادیر تقریبی‌اند؛ پیش از استفاده رقابتی بازبینی کنید.</string>
+    <string name="frames">فریم‌های پردازش‌شده</string>
+    <string name="perf_target">هدف روی Poco X4 Pro: ۱۵ تا ۲۰ FPS پردازش بدون لگ محسوس.</string>
+    <string name="language">زبان</string>
+    <string name="system_language">پیش‌فرض سیستم</string>
+    <string name="policy_title">سیاست فقط-تحلیل</string>
+    <string name="policy_text">رویال‌مایند هرگز ورودی به بازی تزریق نمی‌کند، با کلاینت کاری ندارد و بازی را خودکار پیش نمی‌برد؛ فقط اطلاعات تاکتیکی نمایش می‌دهد.</string>
+</resources>

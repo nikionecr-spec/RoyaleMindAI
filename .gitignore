@@ -1,0 +1,32 @@
+# data & heavy artifacts stay out of Git
+datasets/raw/*
+datasets/processed/
+datasets/synthetic/
+datasets/validation/
+datasets/test/
+!datasets/**/README.md
+!datasets/**/.gitkeep
+
+# model binaries - distributed via GitHub Releases, not Git
+models/**/*.onnx
+models/**/*.pt
+runs/
+
+# android build outputs
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.apk
+!android/app/src/main/assets/model/README.md
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# secrets - never commit tokens or env files
+.env
+*.keystore
+**/*token*
