@@ -21,9 +21,6 @@ class OnnxDetector(modelBytes: ByteArray, private val classNames: List<String>,
     private val inputH: Int
 
     init {
-        val shape = session.inputInfo.values.first().info.let {
-            (it as ai.onnxruntime.NodeInfoInfo? ?: it)
-        }
         val dims = (session.inputInfo.values.first().info as ai.onnxruntime.TensorInfo).shape
         inputH = (dims[2] as Number).toInt()
         inputW = (dims[3] as Number).toInt()
@@ -36,7 +33,7 @@ class OnnxDetector(modelBytes: ByteArray, private val classNames: List<String>,
         val buffer = FloatBuffer.allocate(3 * inputW * inputH)
         // CHW, RGB, /255
         val px = IntArray(inputW * inputH)
-        blob.getPixels(px, 0, inputW, inputW, inputH)
+        blob.getPixels(px, 0, inputW, 0, 0, inputW, inputH)
         val n = inputW * inputH
         for (i in 0 until n) {
             val c = px[i]

@@ -109,7 +109,7 @@ class OverlayService : Service() {
     override fun onDestroy() {
         try { hudView?.let { wm.removeView(it) }; controlView?.let { wm.removeView(it) } }
         catch (_: Exception) {}
-        ticker?.callbacks?.clear()
+        ticker?.removeCallbacksAndMessages(null)
         GameStateRepository.setRunning(false)
         super.onDestroy()
     }

@@ -1,6 +1,7 @@
 package com.royalemind.ai.engine
 
 import com.royalemind.ai.data.CardDb
+import org.json.JSONObject
 
 /**
  * Predictor facade (mirror of ai/prediction/predictor.py): merges elixir,
@@ -27,7 +28,7 @@ class Predictor(private val db: CardDb) {
             put("confidence", move.confidence)
             put("risk", move.risk)
             put("reasons", org.json.JSONArray().apply { move.reasons.forEach { put(it) } })
-            put("elixir", JSONObject(snap as Map<*, *>))
+            put("elixir", JSONObject(snap))
             put("opponent", JSONObject().apply {
                 put("hand", org.json.JSONArray().apply { cycle.opponentHand.forEach { put(it ?: JSONObject.NULL) } })
                 put("coverage", (kotlin.math.round(cycle.coverage() * 1000) / 1000))

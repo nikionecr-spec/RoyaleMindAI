@@ -13,9 +13,9 @@ class PlacementEngine(private val arenaCfg: ArenaGeometry.Config = ArenaGeometry
 
     data class Candidate(
         val pos: ArenaGeometry.Point,
-        val score: Double = 0.0,
-        val risk: String = "low",
-        val reasons: MutableList<String> = mutableListOf()
+        var score: Double = 0.0,
+        var risk: String = "low",
+        var reasons: MutableList<String> = mutableListOf()
     )
 
     private val gridCandidates: List<Candidate> by lazy {

@@ -17,7 +17,7 @@ data class Detection(
 
 data class Track(
     val id: Int,
-    val clsName: String,
+    var clsName: String,
     val team: String,
     var bbox: FloatArray,
     var conf: Float,
@@ -82,7 +82,7 @@ class ByteTrackerLite(
 
         matchStage(detections.filter { it.conf >= highConf }, iouThr)
         // stage 2: looser gate rescues occluded tracks (ByteTrack spirit)
-        matchStage(detections.filter { it.conf in lowConf until highConf }, max(0.15f, iouThr * 0.6f))
+        matchStage(detections.filter { it.conf >= lowConf && it.conf < highConf }, max(0.15f, iouThr * 0.6f))
 
         // age + remove
         val survivors = mutableListOf<Track>()

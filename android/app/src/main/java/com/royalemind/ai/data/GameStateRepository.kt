@@ -49,5 +49,5 @@ object GameStateRepository {
 
     /** Extract the 4 hand card names from a hand-strip bitmap (via crop classifier)
      *  is a future step; for now the hand can be set manually in the UI. */
-    var manualHand by mutableStateOf(listOf<String?, String?, String?, String?>(null, null, null, null))
+    var manualHand by mutableStateOf(listOf<String?>(null, null, null, null))
 }

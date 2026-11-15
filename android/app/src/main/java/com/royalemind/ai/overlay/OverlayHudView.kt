@@ -27,7 +27,7 @@ class OverlayHudView(context: Context) : View(context) {
         color = Color.rgb(230, 70, 70); style = Paint.Style.STROKE; strokeWidth = 5f
     }
     private val white = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.WHITE; textSize = 34f; isShadowLayer = true
+        color = Color.WHITE; textSize = 34f
         setShadowLayer(6f, 0f, 0f, Color.BLACK)
     }
     private val barBack = Paint().apply { color = Color.argb(160, 0, 0, 0) }
@@ -54,7 +54,7 @@ class OverlayHudView(context: Context) : View(context) {
                 path.reset()
                 path.moveTo(sx.toFloat(), sy.toFloat())
                 val towerY = (ArenaGeometry.TOWER_Y_OWN * h).toFloat()
-                path.quadTo(sx, (sy + towerY) / 2, sx, towerY)
+                path.quadTo(sx.toFloat(), (sy + towerY) / 2f, sx.toFloat(), towerY)
                 canvas.drawPath(path, pathPaint)
             }
         }

@@ -148,8 +148,11 @@ fun CardDatabaseScreen() {
             style = MaterialTheme.typography.titleMedium) }
         items(db.cards.keys.sorted()) { name ->
             val c = db.cards[name]!!
-            val roles = c.optJSONArray("roles")?.joinToString(", ") {
-                (it as? String) ?: "" } ?: ""
+            val rolesArr = c.optJSONArray("roles")
+            val roles = if (rolesArr != null)
+                (0 until rolesArr.length()).mapNotNull { rolesArr.optString(it).takeIf { r -> r.isNotEmpty() } }
+                    .joinToString(", ")
+            else ""
             Card(Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
                 Column(Modifier.padding(12.dp)) {
                     Text(name, color = purple, fontSize = 15.sp)

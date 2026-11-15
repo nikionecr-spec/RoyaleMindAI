@@ -57,12 +57,10 @@ class TacticalEngine(private val db: CardDb) {
                 ?: JSONObject.NULL)
             put("reason", reason)
             put("confidence", (kotlin.math.round(confidence * 1000) / 1000))
-            put("risk", risk); put("reasons", JSONArrayish(reasons))
+            put("risk", risk)
+            put("reasons", org.json.JSONArray().apply { reasons.forEach { put(it) } })
         }
     }
-
-    private fun JSONArrayish(items: List<String>): org.json.JSONArray =
-        org.json.JSONArray().apply { items.forEach { put(it) } }
 
     fun bestMove(hand: List<String?>, elixir: Double, units: List<BoardUnit>,
                  cfg: ArenaGeometry.Config, phase: String,
