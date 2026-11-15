@@ -115,12 +115,13 @@ fun LiveScreen(start: () -> Unit, stop: () -> Unit, overlay: () -> Unit) {
         Spacer(Modifier.height(16.dp))
         val pred = GameStateRepository.lastPrediction
         Text(stringResource(R.string.manual_hand), style = MaterialTheme.typography.titleMedium)
+        val ctx = androidx.compose.ui.platform.LocalContext.current
         var hand by remember { mutableStateOf(listOf("", "", "", "")) }
         hand.forEachIndexed { i, v ->
             OutlinedTextField(value = v, onValueChange = { nv ->
                 hand = hand.toMutableList().also { it[i] = nv }
-                val db = CardDb.get(androidx.compose.ui.platform.LocalContext.current)
                 GameStateRepository.manualHand = hand.map { h -> h.trim().takeIf { it.isNotEmpty() } }
+                val db = CardDb.get(ctx)
                 if (db != null && nv.isNotBlank() && db.get(nv.trim()) == null) { /* unknown name */ }
             },
                 label = { Text("card ${i + 1}") }, modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp))
