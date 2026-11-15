@@ -113,6 +113,17 @@ class ScreenCaptureService : Service() {
     }
 
     private fun startCapture(resultCode: Int, data: Intent) {
+        try {
+            startCaptureInner(resultCode, data)
+        } catch (e: Exception) {
+            Log.e(TAG, "capture start failed", e)
+            GameStateRepository.setModelStatus(false, "capture failed: ${e.message}")
+            GameStateRepository.setRunning(false)
+            stopSelf()
+        }
+    }
+
+    private fun startCaptureInner(resultCode: Int, data: Intent) {
         if (android.os.Build.VERSION.SDK_INT >= 30) {
             val dm = getSystemService(Context.WINDOW_SERVICE) as android.view.WindowManager
             val bounds = dm.currentWindowMetrics.bounds

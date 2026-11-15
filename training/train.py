@@ -22,6 +22,8 @@ def main() -> int:
     ap.add_argument("--imgsz", type=int, default=320)
     ap.add_argument("--batch", type=int, default=8)
     ap.add_argument("--workers", type=int, default=1)
+    ap.add_argument("--fraction", type=float, default=1.0,
+                    help="fraction of the train set used per epoch (CPU time control)")
     ap.add_argument("--name", default="smoke")
     ap.add_argument("--device", default="cpu")
     args = ap.parse_args()
@@ -34,6 +36,7 @@ def main() -> int:
         imgsz=args.imgsz,
         batch=args.batch,
         workers=args.workers,
+        fraction=args.fraction,
         device=args.device,
         project="runs",
         name=args.name,

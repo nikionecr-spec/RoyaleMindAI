@@ -174,6 +174,8 @@ def main() -> int:
     ap.add_argument("--max-detection", type=int, default=None,
                     help="cap detection frames (smoke runs)")
     ap.add_argument("--max-classifier", type=int, default=None)
+    ap.add_argument("--skip-classifier", action="store_true",
+                    help="detection-only run (crops parquet not present)")
     ap.add_argument("--keep-parquet", action="store_true")
     args = ap.parse_args()
 
@@ -182,14 +184,15 @@ def main() -> int:
     os.makedirs(CLS_OUT, exist_ok=True)
 
     det_counts, class_counts = prepare_detection(classes, DET_OUT, args.max_detection)
-    cls_counts = prepare_classifier(classes, CLS_OUT, args.max_classifier)
+    cls_counts = {} if args.skip_classifier else prepare_classifier(classes, CLS_OUT, args.max_classifier)
 
     print("detection:", dict(det_counts))
     print("classifier:", dict(cls_counts))
 
     # SAFETY: never delete the raw parquet files unless something was produced
     wrote_det = det_counts.get("train", 0) + det_counts.get("val", 0) + det_counts.get("test", 0)
-    wrote_cls = cls_counts.get("train", 0) + cls_counts.get("val", 0) + cls_counts.get("test", 0)
+    wrote_cls = 1 if args.skip_classifier else (
+        cls_counts.get("train", 0) + cls_counts.get("val", 0) + cls_counts.get("test", 0))
     if wrote_det == 0 or wrote_cls == 0:
         print("ERROR: extraction produced nothing - raw parquet files are KEPT for debugging.")
         return 1

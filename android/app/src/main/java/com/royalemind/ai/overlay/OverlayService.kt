@@ -30,8 +30,9 @@ class OverlayService : Service() {
     override fun onCreate() {
         super.onCreate()
         wm = getSystemService(WINDOW_SERVICE) as WindowManager
-        addHud()
-        addControlBubble()
+        // never let a single overlay failure kill the service
+        try { addHud() } catch (_: Exception) { }
+        try { addControlBubble() } catch (_: Exception) { }
         startTicking()
     }
 

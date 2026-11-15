@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RoyaleMind AI</string>
+    <string name="notif_channel">Analysis assistant</string>
+    <string name="notif_capture_title">RoyaleMind assistant is running</string>
+    <string name="notif_capture_text">Live match analysis overlay (display only, never touches the game)</string>
+
+    <string name="tab_live">Assistant</string>
+    <string name="tab_cards">Cards</string>
+    <string name="tab_status">Status</string>
+
+    <string name="start_assistant">Start assistant</string>
+    <string name="stop_assistant">Stop assistant</string>
+    <string name="overlay_permission">Floating window permission</string>
+
+    <string name="model">Model</string>
+    <string name="loaded">Model ready</string>
+    <string name="not_loaded">Model not ready</string>
+    <string name="inference">Inference latency</string>
+    <string name="frames">Frames processed</string>
+    <string name="perf_target">Target on Poco X4 Pro: 15–20 processing FPS with no visible game lag.</string>
+
+    <string name="elixir_opponent">Opponent elixir (estimate)</string>
+    <string name="elixir_player">My elixir</string>
+    <string name="confidence_pct">Confidence: %1$.0f%%</string>
+    <string name="current_suggestion">Placement suggestion</string>
+
+    <string name="manual_hand">My hand (4 cards)</string>
+    <string name="hand_hint">Type a card name and pick it from the list. Suggestions stay generic until the hand is set.</string>
+    <string name="card_n">Card %1$d</string>
+
+    <string name="cards_count">%1$d cards in database</string>
+    <string name="elixir_cost">%1$d💧</string>
+    <string name="classes_count">Detector classes: %1$d</string>
+
+    <string name="policy_title">Analysis-only policy</string>
+    <string name="policy_text">RoyaleMind AI never injects input, never touches the game client, and never auto-plays. It only displays tactical information.</string>
+    <string name="model_source_note">Model trained on the fan-made research dataset SudhishNeel/clash-royale-detection (no Supercell affiliation). Values are approximate; audit before competitive use.</string>
+</resources>
